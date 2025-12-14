@@ -684,8 +684,8 @@ All JSON statements are converted into valid Markdown fenced code blocks:
 }
 ```
 
-### Statement #11 — **earned** // For schools LMSs only.
-```json
+### Statement #12 — **earned** // For schools LMSs only.
+```jsonc
 {
   "actor": {
     "mbox": "mailto:1234567890@gmail.com",
