@@ -120,6 +120,7 @@ All JSON statements are converted into valid Markdown fenced code blocks:
       "https://nelc.gov.sa/extensions/education_level": "[primary|intermediate|secondary|...]",  // For schools LMSs only
       "https://nelc.gov.sa/extensions/education_year": "[1|2|3|...]",  // For schools LMSs only
       "https://nelc.gov.sa/extensions/semester": "[1|2|3]",  // For schools LMSs only
+      "https://nelc.gov.sa/extensions/program_id": "prog_002",  // For schools LMSs only. It is a unique ID for the Term/Semester
       "https://nelc.gov.sa/extensions/lms_url": "http://www.lmsname.com",
       "https://nelc.gov.sa/extensions/program_url": "http://www.lmsname.com/course/1234",
       "https://nelc.gov.sa/extensions/learner_mobile_no": "+96655995959559",
@@ -655,6 +656,7 @@ All JSON statements are converted into valid Markdown fenced code blocks:
   "context": {
     "extensions": {
       "http://id.tincanapi.com/extension/jws-certificate-location": "http://www.abc.com/cert/12341231",
+      "https://nelc.gov.sa/extensions/program_id": "prog_002",  // For schools LMSs only. It is a unique ID for the Term/Semester
       "https://nelc.gov.sa/extensions/platform": {
         "name": {
           "ar-SA": "التقنيات المتقدمة للتدريب",
