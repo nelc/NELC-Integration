@@ -684,6 +684,74 @@ All JSON statements are converted into valid Markdown fenced code blocks:
 }
 ```
 
+### Statement #11 — **earned** // For schools LMSs only.
+```json
+{
+  "actor": {
+    "mbox": "mailto:1234567890@gmail.com",
+    "name": "1234567890",
+    "objectType": "Agent"
+  },
+  "verb": {
+    "id": "http://id.tincanapi.com/verb/earned",
+    "display": { "en-US": "earned" }
+  },
+  "object": {
+    "id": "http://www.lmsname.com/course/CR001/certificate/CFT001",
+    "definition": {
+      "name": { "en-US": "Java level-1 Certificate" },
+      "type": "https://www.opigno.org/en/tincan_registry/activity_type/certificate"
+    },
+    "objectType": "Activity"
+  },
+  "context": {
+    "extensions": {
+      "http://id.tincanapi.com/extension/jws-certificate-location": "http://www.abc.com/cert/12341231",
+      "https://nelc.gov.sa/extensions/program_id": "prog_002",  // For schools LMSs only. It is a unique ID for the Term/Semester
+      "https://nelc.gov.sa/extensions/platform": {
+        "name": {
+          "ar-SA": "التقنيات المتقدمة للتدريب",
+          "en-US": "Leading Tech for Training"
+        }
+      }
+    },
+    "platform": "KSUX",
+    "language": "ar-SA",
+    "contextActivities": {
+      "parent": [
+        {
+          "id": "http://www.lmsname.com/course/CR001",
+          "definition": {
+            "name": { "en-US": "Java for Beginners" },
+            "description": { "en-US": "" },
+            "type": "https://w3id.org/xapi/cmi5/activitytype/course"
+          },
+          "objectType": "Activity"
+        },
+        {
+          "id": "http://www.lmsname.com/course/CR002",
+          "definition": {
+            "name": { "en-US": "Java for Beginners" },
+            "description": { "en-US": "" },
+            "type": "https://w3id.org/xapi/cmi5/activitytype/course"
+          },
+          "objectType": "Activity"
+        },
+        {
+          "id": "http://www.lmsname.com/course/CR003",
+          "definition": {
+            "name": { "en-US": "DB for Beginners" },
+            "description": { "en-US": "" },
+            "type": "https://w3id.org/xapi/cmi5/activitytype/course"
+          },
+          "objectType": "Activity"
+        }
+      ]
+    }
+  },
+  "timestamp": "2022-01-31T07:18:32.829Z"
+}
+```
 ## Notes to Consider and Common Mistakes
 
 - The first event to be sent is the **"registered"** statement.
