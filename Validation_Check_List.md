@@ -13,9 +13,10 @@
 8. Ensure the **parent object type is always the course**, where applicable.
 9. Ensure the **object type is correct** for each verb:
    - `watch` → `video`
+   - `complete` → `lesson`
    - `attempt` → `unit-test`
    - etc.
-10. Ensure **lesson, video, and virtual classroom objects include a duration**.
+10. Ensure **course, lesson, video, and virtual classroom objects include a valid duration**.
 11. Ensure **every course includes a non-empty description** in the *registered* statement.
 12. Ensure **course name and description do not contain HTML tags**.
 
@@ -40,7 +41,9 @@
 24. Ensure `result.success = true` **when `result.score.raw` is greater than or equal to `result.score.min`**.
 25. Ensure **rating statements have a score between 0 and 1**.
 26. Ensure **rating statements include a textual review response**.
+27. During the staging integration test, lms must send multiple attemps for a specific learner attempting the same test/quiz to allow data validation.
 
 ## 6. Certification Rules
 27. Ensure **certificate ID and certificate URL are distinct fields**.
 28. Ensure the **learner certificate represents an instance copy**, not the master certificate object.
+29. Certificate url link must be publicly accessible link. (without the need for lms login)
