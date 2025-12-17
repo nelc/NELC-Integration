@@ -26,9 +26,11 @@
 16. Ensure **`lms_url` is included in the registration statement**.
 17. Ensure **`program_url` is included in the registration statement**.
 18. Ensure the **platform key is present in all statements** and matches the agreed value.
-19. Ensure the **full platform name is provided**, not an abbreviation.
-20. Ensure `"context.language"` matches the object language (e.g., `ar-SA`, `en-US`).
-21. Ensure **all localized values are placed under the correct language keys** (`en-US`, `ar-SA`).
+19. Ensure the **full platform name is provided**, not an abbreviation. It is under:
+   - "context.extensions.https://nelc.gov.sa/extensions/platform.name.ar-SA"
+   - "context.extensions.https://nelc.gov.sa/extensions/platform.name.en-US"
+21. Ensure `"context.language"` matches the object language (e.g., `ar-SA`, `en-US`).
+22. Ensure **all localized values are placed under the correct language keys** (`en-US`, `ar-SA`).
 
 ## 4. Learner and Identity Validation
 22. Ensure the **learner’s National ID is valid and correctly formatted**.
