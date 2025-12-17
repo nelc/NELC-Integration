@@ -26,7 +26,7 @@
 16. Ensure **`lms_url` is included in the registration statement**.
 17. Ensure **`program_url` is included in the registration statement**.
 18. Ensure the **platform key is present in all statements** and matches the agreed value.
-19. Ensure the **full platform name is provided**, not an abbreviation. It is under:
+19. Ensure the **full platform official name is provided**, not an abbreviation. It is under:
      - `context.extensions.https://nelc.gov.sa/extensions/platform.name.ar-SA`
      - `context.extensions.https://nelc.gov.sa/extensions/platform.name.en-US`
 21. Ensure `"context.language"` matches the object language (e.g., `ar-SA`, `en-US`).
