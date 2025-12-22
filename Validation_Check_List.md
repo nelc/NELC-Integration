@@ -25,29 +25,29 @@
 13. Ensure **course name and description do not contain HTML tags**.
 
 ## 3. Context and Extension Rules
-13. Ensure **course description appears only in the registration statement**.
-14. Ensure **context.extensions appear only in the registration statement**.
-15. Ensure **all mandatory extensions are present and populated** in the registration statement.
-16. Ensure **`lms_url` is included in the registration statement**.
-17. Ensure **`program_url` is included in the registration statement**.
-18. Ensure the **platform key is present in all statements** and matches the agreed value.
-19. Ensure the **full platform official name is provided**, not an abbreviation. It is under:
+14. Ensure **course description appears only in the registration statement**.
+15. Ensure **context.extensions appear only in the registration statement**.
+16. Ensure **all mandatory extensions are present and populated** in the registration statement.
+17. Ensure **`lms_url` is included in the registration statement**.
+18. Ensure **`program_url` is included in the registration statement**.
+19. Ensure the **platform key is present in all statements** and matches the agreed value.
+20. Ensure the **full platform official name is provided**, not an abbreviation. It is under:
      - `context.extensions.https://nelc.gov.sa/extensions/platform.name.ar-SA`
      - `context.extensions.https://nelc.gov.sa/extensions/platform.name.en-US`
 21. Ensure `"context.language"` matches the object language (e.g., `ar-SA`, `en-US`).
 22. Ensure **all localized values are placed under the correct language keys** (`en-US`, `ar-SA`).
 
 ## 4. Learner and Identity Validation
-22. Ensure the **learner’s National ID is valid and correctly formatted**.
+23. Ensure the **learner’s National ID is valid and correctly formatted**.
 
 ## 5. Assessment, Scoring, and Results
-23. Ensure **attempt statements include `result.score.min`**.
-24. Ensure `result.success = true` **when `result.score.raw` is greater than or equal to `result.score.min`**.
-25. Ensure **rating statements have a score between 0 and 1**.
-26. Ensure **rating statements include a textual review response**.
-27. During the staging integration test, lms must send multiple attemps for a specific learner attempting the same test/quiz to allow data validation.
+24. Ensure **attempt statements include `result.score.min`**.
+25. Ensure `result.success = true` **when `result.score.raw` is greater than or equal to `result.score.min`**.
+26. Ensure **rating statements have a score between 0 and 1**.
+27. Ensure **rating statements include a textual review response**.
+28. During the staging integration test, lms must send multiple attemps for a specific learner attempting the same test/quiz to allow data validation.
 
 ## 6. Certification Rules
-27. Ensure **certificate ID and certificate URL are distinct fields**.
-28. Ensure the **learner certificate represents an instance copy**, not the master certificate object.
-29. Certificate url link must be publicly accessible link. (without the need for lms login)
+29. Ensure **certificate ID and certificate URL are distinct fields**.
+30. Ensure the **learner certificate represents an instance copy**, not the master certificate object.
+31. Certificate url link must be publicly accessible link. (without the need for lms login)
