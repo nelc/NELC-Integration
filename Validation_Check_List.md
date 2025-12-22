@@ -12,42 +12,43 @@
 
 
 ## 2. Course, Object, and Relationship Integrity
-7. Ensure the **course ID is consistent** across all statements and matches all `parent.id` references.
-8. Ensure the **parent object type is always the course**, where applicable.
-9. Ensure the **object type is correct** for each verb:
+8. Ensure the **course ID is consistent** across all statements and matches all `parent.id` references.
+9. Ensure the **parent object type is always the course**, where applicable.
+10. Ensure the **object type is correct** for each verb:
    - `watch` → `video`
    - `complete` → `lesson`
    - `attempt` → `unit-test`
    - etc.
-10. Ensure **course, lesson, video, and virtual classroom objects include a valid duration**.
-11. Ensure **every course includes a non-empty description** in the *registered* statement.
-12. Ensure content description is not the same string as the content name.
-13. Ensure **course name and description do not contain HTML tags**.
+11. Ensure **course, lesson, video, and virtual classroom objects include a valid duration**.
+12. Ensure **every course includes a non-empty description** in the *registered* statement.
+13. Ensure content description is not the same string as the content name.
+14. Ensure course level statements have empty description except for register statement. (where it is mandatory)
+15. Ensure **course name and description do not contain HTML tags**.
 
 ## 3. Context and Extension Rules
-14. Ensure **course description appears only in the registration statement**.
-15. Ensure **context.extensions appear only in the registration statement**.
-16. Ensure **all mandatory extensions are present and populated** in the registration statement.
-17. Ensure **`lms_url` is included in the registration statement**.
-18. Ensure **`program_url` is included in the registration statement**.
-19. Ensure the **platform key is present in all statements** and matches the agreed value.
-20. Ensure the **full platform official name is provided**, not an abbreviation. It is under:
+16. Ensure **course description appears only in the registration statement**.
+17. Ensure **context.extensions appear only in the registration statement**.
+18. Ensure **all mandatory extensions are present and populated** in the registration statement.
+19. Ensure **`lms_url` is included in the registration statement**.
+20. Ensure **`program_url` is included in the registration statement**.
+21. Ensure the **platform key is present in all statements** and matches the agreed value.
+22. Ensure the **full platform official name is provided**, not an abbreviation. It is under:
      - `context.extensions.https://nelc.gov.sa/extensions/platform.name.ar-SA`
      - `context.extensions.https://nelc.gov.sa/extensions/platform.name.en-US`
-21. Ensure `"context.language"` matches the object language (e.g., `ar-SA`, `en-US`).
-22. Ensure **all localized values are placed under the correct language keys** (`en-US`, `ar-SA`).
+23. Ensure `"context.language"` matches the object language (e.g., `ar-SA`, `en-US`).
+24. Ensure **all localized values are placed under the correct language keys** (`en-US`, `ar-SA`).
 
 ## 4. Learner and Identity Validation
-23. Ensure the **learner’s National ID is valid and correctly formatted**.
+25. Ensure the **learner’s National ID is valid and correctly formatted**.
 
 ## 5. Assessment, Scoring, and Results
-24. Ensure **attempt statements include `result.score.min`**.
-25. Ensure `result.success = true` **when `result.score.raw` is greater than or equal to `result.score.min`**.
-26. Ensure **rating statements have a score between 0 and 1**.
-27. Ensure **rating statements include a textual review response**.
-28. During the staging integration test, lms must send multiple attemps for a specific learner attempting the same test/quiz to allow data validation.
+26. Ensure **attempt statements include `result.score.min`**.
+27. Ensure `result.success = true` **when `result.score.raw` is greater than or equal to `result.score.min`**.
+28. Ensure **rating statements have a score between 0 and 1**.
+29. Ensure **rating statements include a textual review response**.
+30. During the staging integration test, lms must send multiple attemps for a specific learner attempting the same test/quiz to allow data validation.
 
 ## 6. Certification Rules
-29. Ensure **certificate ID and certificate URL are distinct fields**.
-30. Ensure the **learner certificate represents an instance copy**, not the master certificate object.
-31. Certificate url link must be publicly accessible link. (without the need for lms login)
+31. Ensure **certificate ID and certificate URL are distinct fields**.
+32. Ensure the **learner certificate represents an instance copy**, not the master certificate object.
+33. Certificate url link must be publicly accessible link. (without the need for lms login)
