@@ -21,7 +21,8 @@
    - etc.
 10. Ensure **course, lesson, video, and virtual classroom objects include a valid duration**.
 11. Ensure **every course includes a non-empty description** in the *registered* statement.
-12. Ensure **course name and description do not contain HTML tags**.
+12. Ensure content description is not the same string as the content name.
+13. Ensure **course name and description do not contain HTML tags**.
 
 ## 3. Context and Extension Rules
 13. Ensure **course description appears only in the registration statement**.
