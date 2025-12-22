@@ -7,6 +7,9 @@
 4. Ensure **progress statements exist** and their values **increase monotonically over time**.
 5. Ensure an **attempt statement exists for each exam attempt**.
 6. Ensure **attempt IDs increment sequentially by 1** for each exam attempt.
+7. Ensure All object IDs for course, lesson, video, module, etc must follow the naming convention below:
+`Ex: http://www.lmsname.com/course/CR001/module/MD003/lesson/123423`
+
 
 ## 2. Course, Object, and Relationship Integrity
 7. Ensure the **course ID is consistent** across all statements and matches all `parent.id` references.
