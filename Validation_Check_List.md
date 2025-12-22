@@ -22,7 +22,8 @@
 11. Ensure **course, lesson, video, and virtual classroom objects include a valid duration**.
 12. Ensure **every course includes a non-empty description** in the *registered* statement.
 13. Ensure content description is not the same string as the content name.
-14. Ensure course level statements have empty description except for register statement. (where it is mandatory)
+14. Ensure course level statements such as `initialize` and `progress` have empty description except for register statement. (where it is mandatory)
+The same goes for the object under `parent` key.
 15. Ensure **course name and description do not contain HTML tags**.
 
 ## 3. Context and Extension Rules
