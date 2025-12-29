@@ -8,6 +8,7 @@
 5. Ensure an **attempt statement exists for each exam attempt**.
 6. Ensure **attempt IDs increment sequentially by 1** for each exam attempt.
 7. Ensure All object IDs for course, lesson, video, module, etc must follow the naming convention below:
+8. Ensure **register** and **intialize** event are not sent simultaneously at the same time.
 `Ex: http://www.lmsname.com/course/CR001/module/MD003/lesson/123423`
 
 
