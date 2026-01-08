@@ -1,6 +1,6 @@
 # Auto Validation Checklist
 
-- **1.1** Statement Coverage and Sequence
+- 1.1 Statement Coverage and Sequence
 **1.2** Ensure a **registration statement** is sent for every learning journey.
 ### 1.2 Ensure **all required statements are received**, covering the full lifecycle (from *registered* through *earned*).
 1.3 Ensure **no duplicate statements** are sent within the same course.
