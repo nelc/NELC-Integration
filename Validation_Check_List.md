@@ -5,10 +5,10 @@
 2. Ensure **all required statements are received**, covering the full lifecycle (from *registered* through *earned*).
 3. Ensure **no duplicate statements** are sent within the same course.
 4. Ensure **progress statements exist** and their values **increase monotonically over time**.
-1.5 Ensure an **attempt statement exists for each exam attempt**.
-1.6 Ensure **attempt IDs increment sequentially by 1** for each exam attempt.
-1.7 Ensure All object IDs for course, lesson, video, module, etc must follow the naming convention below:
-1.8 Ensure **register** and **intialize** events are not sent simultaneously at the same time.
+5. Ensure an **attempt statement exists for each exam attempt**.
+6. Ensure **attempt IDs increment sequentially by 1** for each exam attempt.
+7. Ensure All object IDs for course, lesson, video, module, etc must follow the naming convention below:
+8. Ensure **register** and **intialize** events are not sent simultaneously at the same time.
 `Ex: http://www.lmsname.com/course/CR001/module/MD003/lesson/123423`
 
 
