@@ -1,10 +1,10 @@
 # Auto Validation Checklist
 
 ## 1 Statement Coverage and Sequence
-1-1 Ensure a **registration statement** is sent for every learning journey.
-1-2 Ensure **all required statements are received**, covering the full lifecycle (from *registered* through *earned*).
-1.3 Ensure **no duplicate statements** are sent within the same course.
-1.4 Ensure **progress statements exist** and their values **increase monotonically over time**.
+1. Ensure a **registration statement** is sent for every learning journey.
+2. Ensure **all required statements are received**, covering the full lifecycle (from *registered* through *earned*).
+3. Ensure **no duplicate statements** are sent within the same course.
+4. Ensure **progress statements exist** and their values **increase monotonically over time**.
 1.5 Ensure an **attempt statement exists for each exam attempt**.
 1.6 Ensure **attempt IDs increment sequentially by 1** for each exam attempt.
 1.7 Ensure All object IDs for course, lesson, video, module, etc must follow the naming convention below:
