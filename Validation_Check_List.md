@@ -1,14 +1,16 @@
 # Auto Validation Checklist
 
-- 1.1 Statement Coverage and Sequence
-**1.2** Ensure a **registration statement** is sent for every learning journey.
-### 1.2 Ensure **all required statements are received**, covering the full lifecycle (from *registered* through *earned*).
-1.3 Ensure **no duplicate statements** are sent within the same course.
-1.4 Ensure **progress statements exist** and their values **increase monotonically over time**.
-1.5 Ensure an **attempt statement exists for each exam attempt**.
-1.6 Ensure **attempt IDs increment sequentially by 1** for each exam attempt.
-1.7 Ensure All object IDs for course, lesson, video, module, etc must follow the naming convention below:
-1.8 Ensure **register** and **intialize** events are not sent simultaneously at the same time.
+```html
+<ol>
+  <li>1.1 Ensure a <strong>registration statement</strong> is sent for every learning journey.</li>
+  <li>1.2 Ensure <strong>all required statements are received</strong>, covering the full lifecycle.</li>
+  <li>1.3 Ensure <strong>no duplicate statements</strong> are sent within the same course.</li>
+  <li>1.4 Ensure <strong>progress statements</strong> increase monotonically.</li>
+  <li>1.5 Ensure an <strong>attempt statement</strong> exists for each exam attempt.</li>
+  <li>1.6 Ensure <strong>attempt IDs increment sequentially</strong>.</li>
+  <li>1.7 Ensure object IDs follow the naming convention.</li>
+  <li>1.8 Ensure <strong>register</strong> and <strong>initialize</strong> are not simultaneous.</li>
+</ol>
 `Ex: http://www.lmsname.com/course/CR001/module/MD003/lesson/123423`
 
 
