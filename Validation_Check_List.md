@@ -11,6 +11,7 @@
   <li>1.7 Ensure object IDs follow the naming convention.</li>
   <li>1.8 Ensure <strong>register</strong> and <strong>initialize</strong> are not simultaneous.</li>
 </ol>
+```
 `Ex: http://www.lmsname.com/course/CR001/module/MD003/lesson/123423`
 
 
